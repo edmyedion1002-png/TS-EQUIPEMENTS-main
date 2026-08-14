@@ -21,10 +21,11 @@
             background: #f5f6f8;
             font-family: Arial, Helvetica, sans-serif;
             color: #1f2937;
+            padding: 20px;
         }
 
         .error-container {
-            width: 90%;
+            width: 100%;
             max-width: 650px;
             text-align: center;
             background: #ffffff;
@@ -43,7 +44,8 @@
 
         h1 {
             font-size: 28px;
-            margin-bottom: 20px;
+            font-weight: 700;
+            margin-bottom: 22px;
             color: #111827;
         }
 
@@ -55,7 +57,7 @@
 
         .notice {
             margin-top: 25px;
-            padding: 18px;
+            padding: 20px;
             background: #fef2f2;
             border: 1px solid #fecaca;
             border-radius: 8px;
@@ -65,9 +67,29 @@
         }
 
         .support {
-            margin-top: 20px;
+            margin-top: 22px;
             font-size: 14px;
+            line-height: 1.6;
             color: #6b7280;
+        }
+
+        @media (max-width: 480px) {
+            .error-container {
+                padding: 40px 20px;
+            }
+
+            .error-code {
+                font-size: 70px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .message,
+            .notice {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -81,22 +103,25 @@
         <h1>Forbidden</h1>
 
         <p class="message">
-            Serveur d'autorisation non renouvelé.
+            Autorisation de service arrivée à échéance.
         </p>
 
         <div class="notice">
-            Le site configuré à cette adresse a été suspendu
-            pour non-paiement des forfaits souscrits.
+            L’autorisation d’accès associée à ce service est arrivée
+            à échéance et n’a pas été renouvelée dans les délais prévus.
             <br><br>
-            Si c'est votre site, assurez-vous que le réabonnement
-            au serveur dédié est renouvelé.
+            Si vous êtes le propriétaire de ce site, veuillez procéder
+            au renouvellement de votre abonnement afin de rétablir
+            l’accès au service.
         </div>
 
         <p class="support">
-            Veuillez contacter le service technique.
+            Pour toute assistance complémentaire, veuillez contacter
+            le service technique.
         </p>
 
     </main>
 
 </body>
 </html>
+:::
