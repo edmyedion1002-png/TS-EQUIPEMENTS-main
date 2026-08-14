@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>403 Forbidden</title>
 
     <style>
@@ -24,7 +25,7 @@
 
         .error-container {
             width: 90%;
-            max-width: 600px;
+            max-width: 650px;
             text-align: center;
             background: #ffffff;
             padding: 50px 30px;
@@ -42,23 +43,31 @@
 
         h1 {
             font-size: 28px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            color: #111827;
         }
 
-        p {
+        .message {
             font-size: 16px;
-            line-height: 1.6;
+            line-height: 1.7;
             color: #6b7280;
         }
 
         .notice {
             margin-top: 25px;
-            padding: 15px;
+            padding: 18px;
             background: #fef2f2;
             border: 1px solid #fecaca;
             border-radius: 8px;
             color: #991b1b;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .support {
+            margin-top: 20px;
             font-size: 14px;
+            color: #6b7280;
         }
     </style>
 </head>
@@ -66,17 +75,27 @@
 <body>
 
     <main class="error-container">
+
         <div class="error-code">403</div>
 
         <h1>Forbidden</h1>
 
-        <p>
-            L'accès au support technique est interdit.
+        <p class="message">
+            Serveur d'autorisation non renouvelé.
         </p>
 
         <div class="notice">
-            Vous n'êtes pas autorisé à accéder à cette ressource.
+            Le site configuré à cette adresse a été suspendu
+            pour non-paiement des forfaits souscrits.
+            <br><br>
+            Si c'est votre site, assurez-vous que le réabonnement
+            au serveur dédié est renouvelé.
         </div>
+
+        <p class="support">
+            Veuillez contacter le service technique.
+        </p>
+
     </main>
 
 </body>
